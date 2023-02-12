@@ -1,4 +1,4 @@
-import { colors } from "./Global";
+import { colorVariants } from "./Global";
 import { styled } from "./stitches.config";
 
 export const GenericButton = styled("button", {

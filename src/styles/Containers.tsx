@@ -13,13 +13,13 @@ export const Container = styled("div", {
 export const Wrapper = styled("div", {
   minHeight: "100vh",
   maxWidth: "100vw",
-  paddingTop: 80,
 });
 
 export const Flex = styled("div", {
   display: "flex",
+  height: "100%",
   alignItems: "center",
-  gap: "$1",
+  gap: "$4",
 });
 
 export const FlexColumn = styled("div", {

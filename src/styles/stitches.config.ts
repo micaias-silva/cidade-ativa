@@ -7,8 +7,7 @@ export const { styled, globalCss } = createStitches({
   theme: {
     colors: {
       orange: "#FF4A1B",
-      gray: "#232323",
-      gray2: "#373737",
+      gray: "#0c0c0c",
       white: "#fafafa",
       opRed: "rgba(255, 0, 0, .25)",
       opGreen: "rgba(0, 255, 0, .25)",
@@ -22,13 +21,15 @@ export const { styled, globalCss } = createStitches({
       bold: 700,
     },
     fontSizes: {
-      normal: "1rem",
+      regular: "1rem",
       topic: "1.5rem",
-      title: "2.25rem",
+      title: "2rem",
     },
     space: {
       1: "0.5rem",
-      2: "1rem",
+      2: "0.75",
+      3: "1rem",
+      4: "1rem",
     },
   },
 });

@@ -5,7 +5,7 @@ import { LogoContainer } from "./styles";
 
 const Logo = () => {
   return (
-    <LogoContainer as="a" href="/">
+    <LogoContainer as="a" href="/#introduction">
       <ImageContainer>
         <img src={logoSvg} alt="instituto-logo" />
       </ImageContainer>

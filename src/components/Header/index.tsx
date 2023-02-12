@@ -1,20 +1,18 @@
-import { Flex } from "../../styles/Containers";
-import { Link } from "../../styles/Text";
-import Logo from "../Logo";
-import { StyledHeader } from "./styles";
+import { Title } from "../../styles/Text";
+import { HeaderContainer, HeaderPresention, StyledHeader } from "./styles";
+import backgroundImage from "../../assets/img/background.png";
 
 const Header = () => {
   return (
     <StyledHeader>
-      <Flex>
-        <Logo />
-        <nav>
-          <Flex>
-            <Link href="/#atividades">Nossas atividades</Link>
-            <Link href="/#quem-somos">Quem somos</Link>
-          </Flex>
-        </nav>
-      </Flex>
+      <HeaderContainer>
+        <HeaderPresention>
+          <Title color="white">
+            LAZER, ESPORTE E CULTURA. CONHEÇA O PROJETO CIDADE ATIVA
+          </Title>
+        </HeaderPresention>
+        <img src={backgroundImage} />
+      </HeaderContainer>
     </StyledHeader>
   );
 };

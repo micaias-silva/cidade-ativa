@@ -1,14 +1,17 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
+import { Wrapper } from "./styles/Containers";
 
 function App() {
   return (
-    <div className="App">
+    <Wrapper className="App">
+      <Navigation />
       <Header />
-        <Home/>
+      <Home />
       <Footer />
-    </div>
+    </Wrapper>
   );
 }
 

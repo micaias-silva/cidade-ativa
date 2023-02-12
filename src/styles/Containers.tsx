@@ -31,6 +31,7 @@ export const FlexColumn = styled("div", {
 
 export const Section = styled("section", {
   margin: "$2 0",
+  padding: "80px 0 0 0",
 });
 
 export const Grid = styled("div", {
@@ -42,9 +43,10 @@ export const Grid = styled("div", {
   },
 });
 
-export const UList = styled("ul", {
+export const UnorderedList = styled("ul", {
+  textAlign: "left",
   listStyle: "none",
   color: "$white",
 });
 
-export const LItem = styled("li", {});
+export const ListItem = styled("li", {});

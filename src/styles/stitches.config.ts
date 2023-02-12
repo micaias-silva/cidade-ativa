@@ -14,6 +14,7 @@ export const { styled, globalCss } = createStitches({
       opGreen: "rgba(0, 255, 0, .25)",
       opBlue: "rgba(0, 0, 255, .25)",
       opYellow: "rgba(255, 255, 0, .25)",
+      socialInstagram: "#CF50AC",
     },
     fontWeights: {
       light: 300,

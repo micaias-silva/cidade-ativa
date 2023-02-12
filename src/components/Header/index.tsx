@@ -10,8 +10,8 @@ const Header = () => {
         <Logo />
         <nav>
           <Flex>
-            <Link href="#atividades">Nossas atividades</Link>
-            <Link href="#quem-somos">Quem somos</Link>
+            <Link href="/#atividades">Nossas atividades</Link>
+            <Link href="/#quem-somos">Quem somos</Link>
           </Flex>
         </nav>
       </Flex>

@@ -13,6 +13,12 @@ export const colors = {
     gray2: { color: "$gray2" },
     white: { color: "$white" },
   },
+  background: {
+    orange: { background: "$orange" },
+    gray: { background: "$gray" },
+    gray2: { background: "$gray2" },
+    white: { background: "$white" },
+  },
 };
 
 const globalStyles = globalCss({
@@ -24,6 +30,9 @@ const globalStyles = globalCss({
     margin: 0,
     boxSizing: "border-box",
     fontSize: "$normal",
+  },
+  a: {
+    textDecoration: "none",
   },
   html: {
     fontFamily: "Inter",

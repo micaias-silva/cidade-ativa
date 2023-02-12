@@ -15,6 +15,7 @@ export const Link = styled("a", {
   "&:hover": {
     filter: "brightness(5)",
   },
+  variants: { ...colors },
 });
 
 export const Text = styled("p", {
@@ -26,6 +27,7 @@ export const Text = styled("p", {
 
 export const Title = styled("h1", {
   ...baseText,
+  margin: "0 0 $2 0",
   fontSize: "$title",
   fontWeight: "$bold",
   variants: { ...colors },

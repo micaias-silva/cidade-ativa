@@ -18,7 +18,7 @@ import { ImageContainer } from "../../styles/Image";
 import { contactData } from "../../config/contactData";
 import { GrInstagram } from "react-icons/gr";
 import { BsTelephone } from "react-icons/bs";
-import { TopicTitle } from "../../styles/Text";
+import { SubTitle } from "../../styles/Text";
 import { formatPhone } from "../../tools/format.tools";
 
 const Footer = () => {
@@ -27,13 +27,13 @@ const Footer = () => {
       <Container>
         <Grid>
           <InGridContainer>
-            <TopicTitle color="white">Acompanhe o Instituto!</TopicTitle>
+            <SubTitle color="white">Acompanhe o Instituto!</SubTitle>
             <SocialMediaLink href={contactData.instagram} target="_blank">
               Instagram
             </SocialMediaLink>
           </InGridContainer>
           <InGridContainer>
-            <TopicTitle color="white">Entre em Contato</TopicTitle>
+            <SubTitle color="white">Entre em Contato</SubTitle>
             <UnorderedList>
               {contactData.phoneNumbers.map((phone, index) => (
                 <ListItem key={"phone" + index}>{formatPhone(phone)}</ListItem>

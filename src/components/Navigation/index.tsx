@@ -10,10 +10,10 @@ const Navigation = () => {
         <Logo />
         <StyledNav>
           <Flex>
-            <GenericLink href="#">Projeto</GenericLink>
-            <GenericLink href="#">Quem Somos</GenericLink>
-            <GenericLink href="#">Onde Estamos?</GenericLink>
-            <GenericLink href="#">Deseja Contribuir?</GenericLink>
+            <GenericLink href="#projects">Projetos</GenericLink>
+            <GenericLink href="#about-us">Quem Somos</GenericLink>
+            <GenericLink href="#location">Onde Estamos?</GenericLink>
+            <GenericLink href="#contrib-form">Deseja Contribuir?</GenericLink>
           </Flex>
         </StyledNav>
       </Flex>

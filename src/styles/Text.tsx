@@ -22,7 +22,7 @@ export const GenericLink = styled("a", {
 export const Text = styled("p", {
   ...baseText,
   fontWeight: "$light",
-  wordBreak: "break-all",
+  wordBreak: "break-word",
   variants: { ...colorVariants },
 });
 
@@ -39,8 +39,15 @@ export const Title = styled("h1", {
 
 export const SubTitle = styled("h2", {
   ...baseText,
-  margin: "0 0 $1 0",
+
+  marginBottom: 80,
   fontSize: "$topic",
   fontWeight: "$bold",
+  variants: { ...colorVariants },
+});
+
+export const Label = styled("label", {
+  ...baseText,
+  color: "$white",
   variants: { ...colorVariants },
 });

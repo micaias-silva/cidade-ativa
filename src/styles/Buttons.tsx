@@ -3,14 +3,15 @@ import { styled } from "./stitches.config";
 
 export const GenericButton = styled("button", {
   border: "none",
-  borderRadius: "15px",
+  borderRadius: 5,
   padding: "5px 10px",
   fontWeight: "$bold",
   cursor: "pointer",
   background: "$gray",
   color: "$white",
   "&:hover": {
-    background: "$gray2",
+    color: "$gray",
+    background: "$white",
   },
   variants: {
     size: {

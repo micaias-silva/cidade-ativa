@@ -6,14 +6,15 @@ interface IActivityProps {
   title: string;
   image: string;
   background: string;
-  to: string;
+  // to: string;
 }
 
-const FrameButton = ({ image, title, background, to }: IActivityProps) => {
+const ProjectFrame = ({ image, title, background }: IActivityProps) => {
   return (
     <ButtonContainer
       as="a"
-      href={to}
+      href="https://www.instagram.com/cidadeativa.mcz/"
+      target="_blank"
       css={{ "&::before": { backgroundColor: background } }}
     >
       <img src={image} alt="" />
@@ -22,4 +23,4 @@ const FrameButton = ({ image, title, background, to }: IActivityProps) => {
   );
 };
 
-export default FrameButton;
+export default ProjectFrame;

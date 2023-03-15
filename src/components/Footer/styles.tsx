@@ -1,7 +1,7 @@
 import { Flex, Grid } from "../../styles/Containers";
 import { ImageContainer } from "../../styles/Image";
 import { styled } from "../../styles/stitches.config";
-import { GenericLink } from "../../styles/Text";
+import { GenericLink, SubTitle } from "../../styles/Text";
 
 export const StyledFooter = styled("footer", {
   width: "100%",
@@ -31,7 +31,7 @@ export const SocialMediaLink = styled("a", {
 });
 
 export const InGridContainer = styled("div", {
-  padding: "40px 0",
+  padding: "40px 20px",
 
   [`& ${ImageContainer}`]: {
     display: "flex",
@@ -42,6 +42,9 @@ export const InGridContainer = styled("div", {
     img: {
       width: "50%",
     },
+  },
+  [`& ${SubTitle}`]: {
+    marginBottom: 10,
   },
 });
 

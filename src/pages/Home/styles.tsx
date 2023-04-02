@@ -5,8 +5,8 @@ import { SubTitle, Text } from "../../styles/Text";
 export const StyledHome = styled("main", {});
 
 export const AboutUsSection = styled(Section, {
-  paddingRight: 25,
-  paddingLeft: 25,
+  paddingRight: 50,
+  paddingLeft: 50,
   background: "$orange",
 
   [`& ${Flex}`]: {
@@ -37,7 +37,9 @@ export const AboutUsImageContainer = styled("div", {
     display: "none",
   },
   img: {
-    width: "100%",
+    width: 300,
+    height: 300,
+    borderRadius: "100%",
     "@mobile": {
       display: "none",
     },
@@ -46,6 +48,9 @@ export const AboutUsImageContainer = styled("div", {
 
 export const MapSection = styled(Section, {
   textAlign: "center",
+  [`${Text}`]: {
+    marginTop: "$4",
+  },
 });
 
 export const FormSection = styled(Section, {
@@ -55,13 +60,13 @@ export const FormSection = styled(Section, {
 
 export const ContribContainer = styled(Container, {
   "@mobile": {
-    margin: 0,
+    margin: "0 auto",
     padding: 0,
   },
 });
 
 export const ContribTextContainer = styled("div", {
-  maxWidth: 250,
+  padding: "0 50px",
   margin: "0 auto",
   "@mobile": {
     display: "none",

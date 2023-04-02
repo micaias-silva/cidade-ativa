@@ -1,4 +1,5 @@
 import { styled } from "./stitches.config";
+import { GenericLink } from "./Text";
 
 export const Container = styled("div", {
   margin: "0 auto",
@@ -13,13 +14,13 @@ export const Container = styled("div", {
 export const Wrapper = styled("div", {
   minHeight: "100vh",
   maxWidth: "100vw",
-  paddingTop: 80,
 });
 
 export const Flex = styled("div", {
   display: "flex",
+  height: "100%",
   alignItems: "center",
-  gap: "$1",
+  gap: "$4",
 });
 
 export const FlexColumn = styled("div", {
@@ -30,7 +31,8 @@ export const FlexColumn = styled("div", {
 });
 
 export const Section = styled("section", {
-  margin: "$2 0",
+  width: "100%",
+  padding: "80px 0",
 });
 
 export const Grid = styled("div", {
@@ -42,9 +44,20 @@ export const Grid = styled("div", {
   },
 });
 
-export const UList = styled("ul", {
+export const UnorderedList = styled("ul", {
+  textAlign: "left",
   listStyle: "none",
+  width: "100%",
+
   color: "$white",
+  [`& ${GenericLink}`]: {
+    fontWeight: "$regular",
+  },
 });
 
-export const LItem = styled("li", {});
+export const ListItem = styled("li", {
+  width: "100%",
+  display: "flex",
+  alignItems: "center",
+  gap: "$3",
+});

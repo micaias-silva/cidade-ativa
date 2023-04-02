@@ -6,39 +6,43 @@ interface GlobalStylesProps {
   children: ReactNode;
 }
 
-export const colors = {
+export const colorVariants = {
   color: {
     orange: { color: "$orange" },
     gray: { color: "$gray" },
-    gray2: { color: "$gray2" },
     white: { color: "$white" },
+  },
+  background: {
+    orange: { background: "$orange" },
+    gray: { background: "$gray" },
+    white: { background: "$white" },
   },
 };
 
 const globalStyles = globalCss({
-  "@import":
-    "url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap')",
-
   "*": {
     padding: 0,
     margin: 0,
     boxSizing: "border-box",
-    fontSize: "$normal",
+    fontSize: "$regular",
+  },
+  a: {
+    textDecoration: "none",
   },
   html: {
     fontFamily: "Inter",
     scrollBehavior: "smooth",
-    "&::-webkit-scrollbar": {
-      width: 10,
-      background: "$white",
-    },
-    "&::-webkit-scrollbar-thumb": {
-      width: 10,
-      background: "$orange",
-      "&:hover": {
-        background: "$orange",
-      },
-    },
+    // "&::-webkit-scrollbar": {
+    //   width: 10,
+    //   background: "$white",
+    // },
+    // "&::-webkit-scrollbar-thumb": {
+    //   width: 10,
+    //   background: "$orange",
+    //   "&:hover": {
+    //     background: "$orange",
+    //   },
+    // },
   },
 });
 

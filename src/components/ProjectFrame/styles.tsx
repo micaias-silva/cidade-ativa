@@ -6,6 +6,12 @@ export const ButtonContainer = styled("div", {
   zIndex: 1,
   height: "250px",
   width: "100%",
+  cursor: "pointer",
+  "&:hover": {
+    scale: 1.01,
+    zIndex: 2,
+    transition: "0.5s",
+  },
   "&::before": {
     content: "''",
     zIndex: 1,

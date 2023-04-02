@@ -1,26 +1,32 @@
-import { Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Atividade from "./pages/Atividade";
+import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import { Wrapper } from "./styles/Containers";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
-    <div className="App">
+    <Wrapper className="App">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+      <Navigation />
       <Header />
-      <Wrapper>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/atividades/">
-            <Atividade />
-          </Route>
-        </Switch>
-      </Wrapper>
+      <Home />
       <Footer />
-    </div>
+    </Wrapper>
   );
 }
 

@@ -1,5 +1,10 @@
 import { Title } from "../../styles/Text";
-import { HeaderContainer, HeaderPresention, StyledHeader } from "./styles";
+import {
+  HeaderContainer,
+  HeaderImage,
+  HeaderPresention,
+  StyledHeader,
+} from "./styles";
 import backgroundImage from "../../assets/img/background.png";
 
 const Header = () => {
@@ -11,7 +16,7 @@ const Header = () => {
             LAZER, ESPORTE E CULTURA. CONHEÇA O PROJETO CIDADE ATIVA
           </Title>
         </HeaderPresention>
-        <img src={backgroundImage} />
+        <HeaderImage src={backgroundImage} />
       </HeaderContainer>
     </StyledHeader>
   );

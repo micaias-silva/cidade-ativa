@@ -1,5 +1,7 @@
+import { fadeIn } from "../../styles/Animations";
 import { Flex } from "../../styles/Containers";
 import { styled } from "../../styles/stitches.config";
+import { Title } from "../../styles/Text";
 
 export const StyledHeader = styled("header", {
   height: 550,
@@ -13,16 +15,20 @@ export const HeaderContainer = styled("div", {
   display: "flex",
   justifyContent: "center",
   flexDirection: "column",
-  img: {
-    zIndex: 0,
-    right: 0,
-    bottom: 0,
-    position: "absolute",
-    width: "100%",
-    objectFit: "cover",
-    "@mobile": {
-      height: "50%",
-    },
+  overflowX: "hidden",
+});
+
+export const HeaderImage = styled("img", {
+  zIndex: 0,
+  right: 0,
+  bottom: 0,
+  position: "absolute",
+  animation: `${fadeIn} 2s `,
+
+  objectFit: "cover",
+  height: "80%",
+  "@mobile": {
+    height: "50%",
   },
 });
 
@@ -33,5 +39,8 @@ export const HeaderPresention = styled("section", {
   left: 100,
   "@mobile": {
     left: "5%",
+  },
+  [`${Title}`]: {
+    textShadow: "0 0 20px rgba(0, 0, 0, 0.75)",
   },
 });

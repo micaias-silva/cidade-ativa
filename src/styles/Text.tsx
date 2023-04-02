@@ -49,5 +49,24 @@ export const SubTitle = styled("h2", {
 export const Label = styled("label", {
   ...baseText,
   color: "$white",
+  fontSize: "$small",
+  display: "block",
+  marginBottom: 5,
   variants: { ...colorVariants },
+});
+
+export const Span = styled("span", {
+  ...baseText,
+  fontSize: "$small",
+  color: "$white",
+});
+
+export const FormError = styled(Span, {
+  ...baseText,
+  display: "block",
+  height: 14,
+  fontWeight: "$bold",
+  fontSize: "$small",
+  color: "$white",
+  margin: "5px 0",
 });

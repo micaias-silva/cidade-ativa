@@ -11,7 +11,7 @@ export const StyledHeader = styled("header", {
   position: "relative",
   overflow: "hidden",
   "@mobile": {
-    background: "linear-gradient(135deg, $orange2, $orange)",
+    background: "$brandGradient",
   },
   ".background": {
     position: "absolute",

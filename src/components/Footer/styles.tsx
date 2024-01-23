@@ -1,7 +1,7 @@
 import { Flex, Grid } from "../../styles/Containers";
 import { ImageContainer } from "../../styles/Image";
 import { styled } from "../../styles/stitches.config";
-import { GenericLink, SubTitle } from "../../styles/Text";
+import { GenericLink, Topic } from "../../styles/Text";
 
 export const StyledFooter = styled("footer", {
   width: "100%",
@@ -43,7 +43,7 @@ export const InGridContainer = styled("div", {
       width: "50%",
     },
   },
-  [`& ${SubTitle}`]: {
+  [`& ${Topic}`]: {
     marginBottom: 10,
   },
 });

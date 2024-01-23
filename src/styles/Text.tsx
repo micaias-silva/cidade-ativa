@@ -32,12 +32,23 @@ export const Title = styled("h1", {
   fontSize: "$title",
   fontWeight: "$bold",
   "@mobile": {
-    fontSize: "$topic",
+    fontSize: "$subtitle",
   },
   variants: { ...colorVariants },
 });
 
-export const SubTitle = styled("h2", {
+export const Subtitle = styled("h3", {
+  ...baseText,
+  margin: "0 0 $2 0",
+  fontSize: "$subtitle",
+  fontWeight: 500,
+  "@mobile": {
+    fontSize: "$regular",
+  },
+  variants: { ...colorVariants },
+})
+
+export const Topic = styled("h2", {
   ...baseText,
 
   marginBottom: 80,

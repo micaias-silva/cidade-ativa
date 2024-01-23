@@ -85,22 +85,25 @@ const Home = () => {
           </Grid>
         </Section>
       </Container>
-      <MapSection id="location">
-        <Topic>Onde estamos?</Topic>
-        <Container>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.6578260658986!2d-35.753270853166626!3d-9.540725399999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70137ba39233d29%3A0x1a400150989b249d!2sR.%20Sen.%20Teot%C3%B4nio%20Vilela%2C%2015%20-%20Village%20Campestre%2C%20Macei%C3%B3%20-%20AL%2C%2057073-530!5e0!3m2!1spt-BR!2sbr!4v1679404190912!5m2!1spt-BR!2sbr"
-            width="100%"
-            height="450"
-            loading="lazy"
-            aria-readonly="true"
-          ></iframe>
-          <Text>
-            R. Sen. Teotônio Vilela, 15 - Village Campestre Maceió - AL
-            57073-383
-          </Text>
-        </Container>
-      </MapSection>
+      <Container>
+
+      </Container>
+      <Container behavior="mobileFit">
+        <MapSection id="location">
+          <Topic>FALE CONOSCO PESSOALMENTE</Topic>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.6578260658986!2d-35.753270853166626!3d-9.540725399999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70137ba39233d29%3A0x1a400150989b249d!2sR.%20Sen.%20Teot%C3%B4nio%20Vilela%2C%2015%20-%20Village%20Campestre%2C%20Macei%C3%B3%20-%20AL%2C%2057073-530!5e0!3m2!1spt-BR!2sbr!4v1679404190912!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="450"
+              loading="lazy"
+              aria-readonly="true"
+            ></iframe>
+            <Text>
+              R. Sen. Teotônio Vilela, 15 - Village Campestre Maceió - AL
+              57073-383
+            </Text>
+        </MapSection>
+      </Container>
       <ContribContainer>
         <FormSection id="contrib-form">
           <Topic color="white" style={{ textAlign: "center" }}>

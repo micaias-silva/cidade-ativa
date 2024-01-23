@@ -2,10 +2,30 @@ import { fadeIn } from "../../styles/Animations";
 import { Flex } from "../../styles/Containers";
 import { styled } from "../../styles/stitches.config";
 import { Title } from "../../styles/Text";
+import backgroundImage from "../../assets/img/header/background.png";
 
 export const StyledHeader = styled("header", {
+  zIndex: 1,
   height: 550,
-  background: "$orange",
+  width: "100%",
+  position: "relative",
+  overflow: "hidden",
+  "@mobile": {
+    background: "linear-gradient(135deg, $orange2, $orange)",
+  },
+  ".background": {
+    position: "absolute",
+    transform: "scaleX(-1)",
+    bottom: 0,
+    right: -10,
+    zIndex: 0,
+    width: "101%",
+    minWidth: 1024,
+    height: "100%",
+    "@mobile": {
+      display: "none"
+    }
+  }
 });
 
 export const HeaderContainer = styled("div", {
@@ -16,6 +36,11 @@ export const HeaderContainer = styled("div", {
   justifyContent: "center",
   flexDirection: "column",
   overflowX: "hidden",
+  padding: "$containerPadding",
+  "@mobile": {
+    alignItems: "center",
+    padding: "$mobileContainerPadding",
+  }
 });
 
 export const HeaderImage = styled("img", {
@@ -34,13 +59,8 @@ export const HeaderImage = styled("img", {
 
 export const HeaderPresention = styled("section", {
   zIndex: 1,
-  maxWidth: 400,
-  position: "absolute",
-  left: 100,
+  maxWidth: 620,
   "@mobile": {
-    left: "5%",
-  },
-  [`${Title}`]: {
-    textShadow: "0 0 20px rgba(0, 0, 0, 0.75)",
-  },
+    textAlign: "center"
+  }
 });

@@ -5,6 +5,7 @@ import imageEsportes from "../../assets/img/esportes.jpg";
 import imageCultura from "../../assets/img/cultura.jpg";
 import imageLazer from "../../assets/img/lazer.jpg";
 import imageEdu from "../../assets/img/educação.jpg";
+import decorationImg from "../../assets/img/etc/decoration-1.svg"
 
 import {
   AboutUsImageContainer,
@@ -19,11 +20,44 @@ import {
 import { GenericButton } from "../../styles/Buttons";
 import { Form, Input } from "../../styles/Form";
 import ContribForm from "../../components/ContribForm";
-import projectImg from "../../assets/img/projeto.jpeg";
+import projectImg from "../../assets/img/simas-presentation.jpg";
 
 const Home = () => {
   return (
     <StyledHome>
+      <Container behavior="mobileFit">
+      <AboutUsSection id="about-us">
+        <Topic color="white">QUEM SOMOS NÓS?</Topic>
+          <AboutUsTextContainer>
+            <Text color="white">
+              O <strong>Instituto Cidade Ativa</strong> é uma
+              <em> Instituição não governamental</em> sem fins lucrativos que
+              atua no desenvolvimento de ações sócio-culturais que promovem a
+              formação humana através da educação e atividades esportivas e
+              culturais, além de levar a conscientização cidadã abordando temas
+              como: <b>meio-ambiente, intolerância e racismo.</b>
+            </Text>
+            <Text color="white">
+              Através de nossos projetos, visamos ampliar as oportunidades de
+              crianças, jovens, adultos e idosos, melhorando sua qualidade de
+              vida, seu empoderamento e promovendo transformação social na
+              comunidade.
+            </Text>
+            <Text color="white">
+              Nossa Missão é contribuir para a redução das desigualdades
+              sociais, promovendo o fortalecimento de vínculo comunitário
+              através do protagonismo, desenvolvimento das potencialidades
+              locais, capacidade criativa, inclusão cultural e esportiva,
+              contribuindo com o desenvolvimento social, econômico, cultural e
+              esportivo do município, da região, do estado e do Brasil.
+            </Text>
+          </AboutUsTextContainer>
+          <img className="decoration" src={decorationImg} draggable="false" />
+          <AboutUsImageContainer>
+            <img src={projectImg} />
+          </AboutUsImageContainer>
+      </AboutUsSection>
+      </Container>
       <Container>
         <Section id="projects">
           <Topic>Nós temos projetos em</Topic>
@@ -51,38 +85,6 @@ const Home = () => {
           </Grid>
         </Section>
       </Container>
-      <AboutUsSection id="about-us">
-        <Topic color="white">Quem somos nós?</Topic>
-        <Flex>
-          <AboutUsTextContainer>
-            <Text color="white">
-              O <strong>Instituto Cidade Ativa</strong> é uma
-              <em> Instituição não governamental</em> sem fins lucrativos que
-              atua no desenvolvimento de ações sócio-culturais que promovem a
-              formação humana através da educação e atividades esportivas e
-              culturais, além de levar a conscientização cidadã abordando temas
-              como: <b>meio-ambiente, intolerância e racismo.</b>
-            </Text>
-            <Text color="white">
-              Através de nossos projetos, visamos ampliar as oportunidades de
-              crianças, jovens, adultos e idosos, melhorando sua qualidade de
-              vida, seu empoderamento e promovendo transformação social na
-              comunidade.
-            </Text>
-            <Text color="white">
-              Nossa Missão é contribuir para a redução das desigualdades
-              sociais, promovendo o fortalecimento de vínculo comunitário
-              através do protagonismo, desenvolvimento das potencialidades
-              locais, capacidade criativa, inclusão cultural e esportiva,
-              contribuindo com o desenvolvimento social, econômico, cultural e
-              esportivo do município, da região, do estado e do Brasil.
-            </Text>
-          </AboutUsTextContainer>
-          <AboutUsImageContainer>
-            <img src={projectImg} />
-          </AboutUsImageContainer>
-        </Flex>
-      </AboutUsSection>
       <MapSection id="location">
         <Topic>Onde estamos?</Topic>
         <Container>

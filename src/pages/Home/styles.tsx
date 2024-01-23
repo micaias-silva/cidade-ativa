@@ -1,6 +1,6 @@
 import { Container, Flex, Grid, Section } from "../../styles/Containers";
 import { styled } from "../../styles/stitches.config";
-import { SubTitle, Text } from "../../styles/Text";
+import { Topic, Text } from "../../styles/Text";
 
 export const StyledHome = styled("main", {});
 
@@ -14,7 +14,7 @@ export const AboutUsSection = styled(Section, {
     justifyContent: "space-around",
     alignItems: "flex-start",
   },
-  [`& ${SubTitle}`]: {
+  [`& ${Topic}`]: {
     marginBottom: 20,
   },
 });

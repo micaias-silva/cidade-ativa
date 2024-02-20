@@ -115,16 +115,17 @@ export const HorizontalDivisionContainer = styled(Container, {
   hr: {
     backgroundColor: "$gray3",
     border: "none",
-    height: 1
+    height: 1,
+    width: "100%",
+    zIndex: -1,
   },
   textAlign: "center",
   [`${Topic}`]: {
-    position: "absolute",
-    left: "calc(50% - 2px)",
     top: "-50%",
-    background: "$white",
-    transform: "translate(50%, -50%)",
+    background: "#ffffff",
+    display: "inline-block",
+    transform: "translate(0%, -50%)",
     margin: 0,
-    padding: 2
+    padding: "0 2px 0 2px"
   }
 })

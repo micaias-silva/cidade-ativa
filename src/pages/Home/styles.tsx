@@ -1,4 +1,4 @@
-import { Container, Flex, Grid, Section } from "../../styles/Containers";
+import { Container, Section } from "../../styles/Containers";
 import { styled } from "../../styles/stitches.config";
 import { Topic, Text } from "../../styles/Text";
 
@@ -91,11 +91,11 @@ export const MapSection = styled(Section, {
 });
 
 export const FormSection = styled(Section, {
-  borderRadius: "10px 10px 0 0",
-  background: "$orange",
+  maxWidth: 512
 });
 
 export const ContribContainer = styled(Container, {
+  position: "relative",
   "@mobile": {
     margin: "0 auto",
     padding: 0,
@@ -109,3 +109,22 @@ export const ContribTextContainer = styled("div", {
     display: "none",
   },
 });
+
+export const HorizontalDivisionContainer = styled(Container, {
+  position: "relative",
+  hr: {
+    backgroundColor: "$gray3",
+    border: "none",
+    height: 1
+  },
+  textAlign: "center",
+  [`${Topic}`]: {
+    position: "absolute",
+    left: "calc(50% - 2px)",
+    top: "-50%",
+    background: "$white",
+    transform: "translate(50%, -50%)",
+    margin: 0,
+    padding: 2
+  }
+})

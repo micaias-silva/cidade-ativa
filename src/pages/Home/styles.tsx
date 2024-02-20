@@ -1,4 +1,4 @@
-import { Container, Section } from "../../styles/Containers";
+import { Container, Flex, Section } from "../../styles/Containers";
 import { styled } from "../../styles/stitches.config";
 import { Topic, Text } from "../../styles/Text";
 
@@ -17,7 +17,7 @@ export const AboutUsSection = styled(Section, {
   "@mobile": {
     borderRadius: 0,
     paddingRight: "$mobileContainerPadding",
-    paddingLeft: "$mobileContainerPadding"
+    paddingLeft: "$mobileContainerPadding",
   },
   ".decoration": {
     position: "absolute",
@@ -26,8 +26,8 @@ export const AboutUsSection = styled(Section, {
     "@mobile": {
       bottom: "$containerPadding",
       right: "$mobileContainerPadding",
-    }
-  }
+    },
+  },
 });
 
 export const AboutUsTextContainer = styled("div", {
@@ -75,30 +75,43 @@ export const MapSection = styled(Section, {
     marginTop: "$4",
     maxWidth: 250,
     right: 0,
-    alignSelf:"flex-end",
+    alignSelf: "flex-end",
     "@mobile": {
-      padding: "0 $mobileContainerPadding"
-    }
+      padding: "0 $mobileContainerPadding",
+    },
   },
   [`${Text}`]: {
     marginTop: "$4",
     fontWeight: "$medium",
     maxWidth: 400,
     "@mobile": {
-      padding: "0 $mobileContainerPadding"
-    }
+      padding: "0 $mobileContainerPadding",
+    },
   },
 });
 
 export const FormSection = styled(Section, {
-  maxWidth: 512
+  width: "100%",
+  [`${Topic}`]: {
+    maxWidth: 420,
+  },
+  "@mobile": {
+    margin: "0 auto",
+  },
+  [`${Flex}`]: {
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexDirection: "row",
+    "@mobile": {
+      justifyContent: "center",
+    },
+  },
 });
 
 export const ContribContainer = styled(Container, {
   position: "relative",
   "@mobile": {
     margin: "0 auto",
-    padding: 0,
   },
 });
 
@@ -126,6 +139,17 @@ export const HorizontalDivisionContainer = styled(Container, {
     display: "inline-block",
     transform: "translate(0%, -50%)",
     margin: 0,
-    padding: "0 2px 0 2px"
-  }
-})
+    padding: "0 2px 0 2px",
+  },
+});
+
+export const PromotionImg = styled("figure", {
+  maxWidth: 512,
+  img: {
+    borderRadius: "100%",
+    width: "100%",
+    "@mobile": {
+      display: "none",
+    },
+  },
+});

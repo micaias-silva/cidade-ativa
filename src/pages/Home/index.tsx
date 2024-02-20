@@ -1,6 +1,6 @@
 import ProjectFrame from "../../components/ProjectFrame";
 import { Container, Flex, Grid, Section } from "../../styles/Containers";
-import { Text, Title, Topic, Label } from "../../styles/Text";
+import { Text, Title, Topic, Label, Subtitle } from "../../styles/Text";
 import imageEsportes from "../../assets/img/esportes.jpg";
 import imageCultura from "../../assets/img/cultura.jpg";
 import imageLazer from "../../assets/img/lazer.jpg";
@@ -16,6 +16,7 @@ import {
   ContribContainer,
   ContribTextContainer,
   AboutUsTextContainer,
+  HorizontalDivisionContainer,
 } from "./styles";
 import { GenericButton } from "../../styles/Buttons";
 import { Form, Input } from "../../styles/Form";
@@ -98,25 +99,25 @@ const Home = () => {
               loading="lazy"
               aria-readonly="true"
             ></iframe>
-            <Text>
+            <Text color="gray3">
               R. Sen. Teotônio Vilela, 15 - Village Campestre Maceió - AL
               57073-383
             </Text>
         </MapSection>
       </Container>
+      <HorizontalDivisionContainer>
+        <hr />
+        <Topic>OU</Topic>
+      </HorizontalDivisionContainer>
       <ContribContainer>
         <FormSection id="contrib-form">
-          <Topic color="white" style={{ textAlign: "center" }}>
-            Gostaria de Contribuir?
+          <Topic>
+            NOS ENVIE UMA MENSAGEM
+            <Subtitle color="gray3">
+              CONTRIBUA PARA QUE O PROJETO POSSA CONTINUAR EXISTINDO
+            </Subtitle>
           </Topic>
-          <Grid>
-            <ContribTextContainer>
-              <Topic color="white">
-                CONTRIBUA PARA QUE O PROJETO POSSA CONTINUAR EXISTINDO
-              </Topic>
-            </ContribTextContainer>
-            <ContribForm />
-          </Grid>
+          <ContribForm />
         </FormSection>
       </ContribContainer>
     </StyledHome>

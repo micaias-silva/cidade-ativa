@@ -1,6 +1,7 @@
 import { Container, Flex, Section } from "../../styles/Containers";
 import { styled } from "../../styles/stitches.config";
 import { Topic, Text } from "../../styles/Text";
+import decorationImg from "../../assets/img/etc/decoration-2.svg";
 
 export const StyledHome = styled("main", {});
 
@@ -91,6 +92,7 @@ export const MapSection = styled(Section, {
 });
 
 export const FormSection = styled(Section, {
+  position: "relative",
   width: "100%",
   [`${Topic}`]: {
     maxWidth: 420,
@@ -109,7 +111,6 @@ export const FormSection = styled(Section, {
 });
 
 export const ContribContainer = styled(Container, {
-  position: "relative",
   "@mobile": {
     margin: "0 auto",
   },
@@ -152,4 +153,19 @@ export const PromotionImg = styled("figure", {
       display: "none",
     },
   },
+});
+
+export const DecorationBackground = styled("div", {
+  width: "100%",
+  background: `url(${decorationImg})`,
+  height: 670,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  position: "absolute",
+  bottom: 0,
+  margin: 0,
+  "@mobile": {
+    backgroundSize: "768px 600px",
+  },
+  zIndex: -1,
 });

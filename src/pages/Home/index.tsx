@@ -1,6 +1,6 @@
 import ProjectFrame from "../../components/ProjectFrame";
 import { Container, Flex, Grid, Section } from "../../styles/Containers";
-import { Text, Title, Topic, Label, Subtitle } from "../../styles/Text";
+import { Text, Topic, Subtitle } from "../../styles/Text";
 import imageEsportes from "../../assets/img/esportes.jpg";
 import imageCultura from "../../assets/img/cultura.jpg";
 import imageLazer from "../../assets/img/lazer.jpg";
@@ -15,13 +15,11 @@ import {
   MapSection,
   FormSection,
   ContribContainer,
-  ContribTextContainer,
   AboutUsTextContainer,
   HorizontalDivisionContainer,
   PromotionImg,
+  DecorationBackground,
 } from "./styles";
-import { GenericButton } from "../../styles/Buttons";
-import { Form, Input } from "../../styles/Form";
 import ContribForm from "../../components/ContribForm";
 import projectImg from "../../assets/img/simas-presentation.jpg";
 
@@ -109,22 +107,25 @@ const Home = () => {
         <hr />
         <Topic>OU</Topic>
       </HorizontalDivisionContainer>
-      <ContribContainer>
-        <FormSection id="contrib-form">
-          <Topic>
-            NOS ENVIE UMA MENSAGEM
-            <Subtitle color="gray3">
-              CONTRIBUA PARA QUE O PROJETO POSSA CONTINUAR EXISTINDO
-            </Subtitle>
-          </Topic>
-          <Flex>
-            <ContribForm />
-            <PromotionImg>
-              <img src={promoImg} />
-            </PromotionImg>
-          </Flex>
-        </FormSection>
-      </ContribContainer>
+      <div style={{ position: "relative" }}>
+        <ContribContainer>
+          <FormSection id="contrib-form">
+            <Topic>
+              NOS ENVIE UMA MENSAGEM
+              <Subtitle as="span" color="gray3" css={{ display: "block" }}>
+                CONTRIBUA PARA QUE O PROJETO POSSA CONTINUAR EXISTINDO
+              </Subtitle>
+            </Topic>
+            <Flex>
+              <ContribForm />
+              <PromotionImg>
+                <img src={promoImg} />
+              </PromotionImg>
+            </Flex>
+          </FormSection>
+        </ContribContainer>
+        <DecorationBackground />
+      </div>
     </StyledHome>
   );
 };

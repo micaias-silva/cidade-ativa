@@ -1,16 +1,15 @@
-import { colorVariants } from "./Global";
 import { styled } from "./stitches.config";
 
 export const GenericButton = styled("button", {
-  border: "2px solid transparent",
-  borderRadius: 5,
+  border: "1px solid $gray",
   padding: "5px 10px",
-  fontWeight: "$bold",
+  fontWeight: 600,
+  fontSize: "$smaller",
   cursor: "pointer",
-  background: "$gray",
-  color: "$white",
-  transition: ".2s",
-
+  background: "transparent",
+  transition: ".1s",
+  textTransform: "uppercase",
+  color: "$gray",
   "&:disabled": {
     background: "$gray2",
     cursor: "not-allowed",
@@ -22,19 +21,20 @@ export const GenericButton = styled("button", {
     },
   },
 
-  "&:hover": {
-    color: "$gray",
-    background: "$white",
-  },
-
   "&:active": {
-    border: "2px solid $gray",
+    borderColor: "$white",
     filter: "brightness(0.8)",
   },
 
   "&:focus": {
-    border: "2px solid $gray",
-    filter: "brightness(0.8)",
+    borderColor: "$gray",
+    color: "$white",
+    background: "$gray",
+  },
+  "&:hover": {
+    borderColor: "$gray",
+    color: "$white",
+    background: "$gray",
   },
   variants: {
     size: {

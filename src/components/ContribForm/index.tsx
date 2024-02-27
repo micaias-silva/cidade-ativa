@@ -69,44 +69,39 @@ const ContribForm = () => {
 
   return (
     <Form onSubmit={handleSubmit(onSubmitFunction)}>
-      <Label htmlFor="name">Nome *</Label>
       <Input
         {...register("name")}
-        placeholder="Nome completo..."
+        placeholder="NOME"
         disabled={isSendingEmail}
       />
       <FormError>{errors.name?.message as string}</FormError>
 
-      <Label htmlFor="email">E-mail *</Label>
       <Input
         {...register("email")}
         type="email"
-        placeholder="exemplo@email.com"
+        placeholder="E-MAIL"
         disabled={isSendingEmail}
       />
       <FormError>{errors.email?.message as string}</FormError>
 
-      <Label htmlFor="subject">Assunto *</Label>
       <Input
         {...register("subject")}
-        placeholder="Com o que contribuir"
+        placeholder="ASSUNTO"
         disabled={isSendingEmail}
       />
       <FormError>{errors.subject?.message as string}</FormError>
 
-      <Label htmlFor="institution">Nome da Instituição</Label>
       <Input
         {...register("institution")}
-        placeholder="Instituição"
+        placeholder="INSTITUIÇÃO REPRESENTADA"
         disabled={isSendingEmail}
       />
       <FormError>{errors.institution?.message as string}</FormError>
 
-      <Label htmlFor="phone">Nº de Telefone *</Label>
       <Input
         {...register("phone")}
         type="tel"
-        placeholder="(00) 00000-0000"
+        placeholder="TELEFONE"
         onChange={(e) => {
           let value = e.target.value;
           e.target.value = formatPhone(value);
@@ -115,10 +110,9 @@ const ContribForm = () => {
       />
       <FormError>{errors.phone?.message as string}</FormError>
 
-      <Label htmlFor="Message">Mensagem</Label>
       <TextArea
         {...register("message")}
-        placeholder="Gostaria de ajudar..."
+        placeholder="MENSAGEM "
         disabled={isSendingEmail}
       />
       <FormError>{errors.message?.message as string}</FormError>

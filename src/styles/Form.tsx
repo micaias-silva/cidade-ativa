@@ -4,18 +4,17 @@ export const Form = styled("form", {
   color: "$white",
   width: "100%",
   maxWidth: 512,
-  margin: "0 auto",
-  padding: "0 10px",
 });
 
 export const Input = styled("input", {
   display: "block",
-  padding: "10px ",
+  padding: "10px ", 
   width: "100%",
-  border: "transparent 2px solid",
-  height: 50,
-  borderRadius: 5,
+  border: "$gray 1px solid",
+  height: 36,
   transition: "0.2s",
+  fontSize: "$smaller",
+  fontWeight: "$medium",
   "&:disabled": {
     cursor: "not-allowed",
     background: "$gray2",
@@ -24,8 +23,11 @@ export const Input = styled("input", {
   "&:focus": {
     boxShadow: "0 0 0 0",
     outline: "none",
-    border: "$gray 2px solid",
+    border: "$gray 1px solid",
   },
+  "&::placeholder": {
+    textTransform: "uppercase"
+  }
 });
 
 export const TextArea = styled("textarea", {
@@ -34,9 +36,9 @@ export const TextArea = styled("textarea", {
   display: "block",
   padding: "10px ",
   width: "100%",
+  fontSize: "$smaller",
   height: 150,
-  border: "transparent 2px solid",
-  borderRadius: 5,
+  border: "$gray 1px solid",
   transition: "0.2s",
   "&:disabled": {
     cursor: "not-allowed",
@@ -46,6 +48,6 @@ export const TextArea = styled("textarea", {
   "&:focus": {
     boxShadow: "0 0 0 0",
     outline: "none",
-    border: "$gray 2px solid",
+    border: "$gray 1px solid",
   },
 });

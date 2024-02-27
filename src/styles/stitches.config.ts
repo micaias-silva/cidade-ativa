@@ -10,7 +10,8 @@ export const { styled, globalCss, keyframes } = createStitches({
       orange2: "#F88365",
       brandGradient: "linear-gradient(135deg, $orange2, $orange)",
       gray: "#0c0c0c",
-      gray2: "#eaeaea",
+      gray2: "#ececec",
+      gray3: "#868686",
       white: "#fafafa",
       opRed: "rgba(255, 0, 0, .25)",
       opGreen: "rgba(0, 255, 0, .25)",
@@ -25,6 +26,7 @@ export const { styled, globalCss, keyframes } = createStitches({
       bold: 700,
     },
     fontSizes: {
+      smaller: "0.75rem",
       small: "0.875rem",
       regular: "1rem",
       subtitle: "1.25rem",

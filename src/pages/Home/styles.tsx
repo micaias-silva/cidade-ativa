@@ -5,41 +5,62 @@ import { Topic, Text } from "../../styles/Text";
 export const StyledHome = styled("main", {});
 
 export const AboutUsSection = styled(Section, {
-  paddingRight: 50,
-  paddingLeft: 50,
-  background: "$orange",
-
-  [`& ${Flex}`]: {
-    width: "100%",
-    justifyContent: "space-around",
-    alignItems: "flex-start",
-  },
+  background: "$brandGradient",
+  borderRadius: 15,
+  position: "relative",
+  padding: "$containerPadding",
+  width: "100%",
+  minHeight: 550,
   [`& ${Topic}`]: {
     marginBottom: 20,
   },
+  "@mobile": {
+    borderRadius: 0,
+    paddingRight: "$mobileContainerPadding",
+    paddingLeft: "$mobileContainerPadding"
+  },
+  ".decoration": {
+    position: "absolute",
+    bottom: "$containerPadding",
+    right: "calc(50% + $containerPadding)",
+    "@mobile": {
+      bottom: "$containerPadding",
+      right: "$mobileContainerPadding",
+    }
+  }
 });
 
 export const AboutUsTextContainer = styled("div", {
   width: "50%",
+  height: "100%",
   display: "flex",
   flexDirection: "column",
+  marginBottom: 75,
   gap: "$4",
+  padding: "0 $containerPadding 0 0",
   "@mobile": {
     width: "100%",
   },
+  img: {
+    width: 100,
+    alignSelf: "flex-end",
+  },
 });
 
-export const AboutUsImageContainer = styled("div", {
+export const AboutUsImageContainer = styled("figure", {
   width: "50%",
-  textAlign: "center",
-  alignSelf: "center",
+  height: "100%",
+  position: "absolute",
+  top: 0,
+  right: 0,
   "@mobile": {
     display: "none",
   },
   img: {
-    width: 300,
-    height: 300,
-    borderRadius: "100%",
+    borderRadius: 15,
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
     "@mobile": {
       display: "none",
     },

@@ -9,6 +9,18 @@ export const Container = styled("div", {
   "@mobile": {
     maxWidth: "40rem",
   },
+  variants: {
+    behavior: {
+      mobileFit: {
+        "@mobile": {
+          width: "100%",
+          maxWidth: "100%",
+          margin: 0,
+          padding: 0
+        },
+      }
+    }
+  }
 });
 
 export const Wrapper = styled("div", {

@@ -10,11 +10,15 @@ export const colorVariants = {
   color: {
     orange: { color: "$orange" },
     gray: { color: "$gray" },
+    gray2: { color: "$gray2" },
+    gray3: { color: "$gray3" },
     white: { color: "$white" },
   },
   background: {
     orange: { background: "$orange" },
     gray: { background: "$gray" },
+    gray2: { background: "$gray2" },
+    gray3: { background: "$gray3" },
     white: { background: "$white" },
   },
 };

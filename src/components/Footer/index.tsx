@@ -12,7 +12,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { InGridContainer, SocialMediaLink, StyledFooter } from "./styles";
 import { ImageContainer } from "../../styles/Image";
 import { contactData } from "../../config/contactData";
-import { GenericLink, SubTitle, Text } from "../../styles/Text";
+import { GenericLink, Topic, Text } from "../../styles/Text";
 import { formatPhone } from "../../tools/format.tools";
 
 const Footer = () => {
@@ -26,7 +26,7 @@ const Footer = () => {
             </ImageContainer>
           </InGridContainer>
           <InGridContainer>
-            <SubTitle color="white">Entre em Contato</SubTitle>
+            <Topic color="white">Entre em Contato</Topic>
             <UnorderedList>
               <ListItem>
                 <GrInstagram />

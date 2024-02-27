@@ -1,6 +1,6 @@
 import ProjectFrame from "../../components/ProjectFrame";
 import { Container, Flex, Grid, Section } from "../../styles/Containers";
-import { Text, Title, SubTitle, Label } from "../../styles/Text";
+import { Text, Title, Topic, Label } from "../../styles/Text";
 import imageEsportes from "../../assets/img/esportes.jpg";
 import imageCultura from "../../assets/img/cultura.jpg";
 import imageLazer from "../../assets/img/lazer.jpg";
@@ -26,7 +26,7 @@ const Home = () => {
     <StyledHome>
       <Container>
         <Section id="projects">
-          <SubTitle>Nós temos projetos em</SubTitle>
+          <Topic>Nós temos projetos em</Topic>
           <Grid>
             <ProjectFrame
               title="Esportes"
@@ -52,7 +52,7 @@ const Home = () => {
         </Section>
       </Container>
       <AboutUsSection id="about-us">
-        <SubTitle color="white">Quem somos nós?</SubTitle>
+        <Topic color="white">Quem somos nós?</Topic>
         <Flex>
           <AboutUsTextContainer>
             <Text color="white">
@@ -84,7 +84,7 @@ const Home = () => {
         </Flex>
       </AboutUsSection>
       <MapSection id="location">
-        <SubTitle>Onde estamos?</SubTitle>
+        <Topic>Onde estamos?</Topic>
         <Container>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.6578260658986!2d-35.753270853166626!3d-9.540725399999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70137ba39233d29%3A0x1a400150989b249d!2sR.%20Sen.%20Teot%C3%B4nio%20Vilela%2C%2015%20-%20Village%20Campestre%2C%20Macei%C3%B3%20-%20AL%2C%2057073-530!5e0!3m2!1spt-BR!2sbr!4v1679404190912!5m2!1spt-BR!2sbr"
@@ -101,14 +101,14 @@ const Home = () => {
       </MapSection>
       <ContribContainer>
         <FormSection id="contrib-form">
-          <SubTitle color="white" style={{ textAlign: "center" }}>
+          <Topic color="white" style={{ textAlign: "center" }}>
             Gostaria de Contribuir?
-          </SubTitle>
+          </Topic>
           <Grid>
             <ContribTextContainer>
-              <SubTitle color="white">
+              <Topic color="white">
                 CONTRIBUA PARA QUE O PROJETO POSSA CONTINUAR EXISTINDO
-              </SubTitle>
+              </Topic>
             </ContribTextContainer>
             <ContribForm />
           </Grid>

@@ -1,11 +1,12 @@
-import { Subtitle, Title } from "../../styles/Text";
+import { Subtitle, Title } from "@styles/Text";
+import backgroundImage from "@img/etc/decoration-background-1.svg";
+
 import {
   HeaderContainer,
   HeaderImage,
   HeaderPresention,
   StyledHeader,
 } from "./styles";
-import backgroundImage from "../../assets/img/etc/decoration-background-1.svg";
 
 const Header = () => {
   return (

@@ -1,7 +1,5 @@
-import { fadeIn } from "../../styles/Animations";
-import { Flex } from "../../styles/Containers";
-import { styled } from "../../styles/stitches.config";
-import { Title } from "../../styles/Text";
+import { fadeIn } from "@styles/Animations";
+import { styled } from "@styles/stitches.config";
 
 export const StyledHeader = styled("header", {
   zIndex: 1,

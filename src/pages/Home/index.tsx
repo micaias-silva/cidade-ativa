@@ -1,12 +1,12 @@
-import ProjectFrame from "../../components/ProjectFrame";
-import { Container, Flex, Grid, Section } from "../../styles/Containers";
-import { Text, Topic, Subtitle } from "../../styles/Text";
-import imageEsportes from "../../assets/img/esportes.jpg";
-import imageCultura from "../../assets/img/cultura.jpg";
-import imageLazer from "../../assets/img/lazer.jpg";
-import imageEdu from "../../assets/img/educação.jpg";
-import decorationImg from "../../assets/img/etc/decoration-1.svg";
-import promoImg from "../../assets/img/promo-1.jpg";
+import ProjectFrame from "@components/ProjectFrame";
+import { Container, Flex, Grid, Section } from "@styles/Containers";
+import { Text, Topic, Subtitle } from "@styles/Text";
+import imageEsportes from "@img/esportes.jpg";
+import imageCultura from "@img/cultura.jpg";
+import imageLazer from "@img/lazer.jpg";
+import imageEdu from "@img/educação.jpg";
+import decorationImg from "@img/etc/decoration-1.svg";
+import promoImg from "@img/promo-1.jpg";
 
 import {
   AboutUsImageContainer,
@@ -20,8 +20,8 @@ import {
   PromotionImg,
   DecorationBackground,
 } from "./styles";
-import ContribForm from "../../components/ContribForm";
-import projectImg from "../../assets/img/simas-presentation.jpg";
+import ContribForm from "@components/ContribForm";
+import projectImg from "@img/simas-presentation.jpg";
 
 const Home = () => {
   return (

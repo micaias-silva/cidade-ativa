@@ -1,5 +1,5 @@
-import { Flex } from "../../styles/Containers";
-import { styled } from "../../styles/stitches.config";
+import { Flex } from "@styles/Containers";
+import { styled } from "@styles/stitches.config";
 
 export const NavigationContainer = styled("div", {
   height: 80,

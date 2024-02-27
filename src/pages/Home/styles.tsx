@@ -1,7 +1,7 @@
-import { Container, Flex, Section } from "../../styles/Containers";
-import { styled } from "../../styles/stitches.config";
-import { Topic, Text } from "../../styles/Text";
-import decorationImg from "../../assets/img/etc/decoration-2.svg";
+import { Container, Flex, Section } from "@styles/Containers";
+import { styled } from "@styles/stitches.config";
+import { Topic, Text } from "@styles/Text";
+import decorationImg from "@img/etc/decoration-2.svg";
 
 export const StyledHome = styled("main", {});
 

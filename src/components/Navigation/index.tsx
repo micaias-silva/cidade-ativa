@@ -1,6 +1,6 @@
-import { Flex } from "../../styles/Containers";
-import { GenericLink } from "../../styles/Text";
-import Logo from "../Logo";
+import { Flex } from "@styles/Containers";
+import { GenericLink } from "@styles/Text";
+import Logo from "@components/Logo";
 import { NavigationContainer, StyledNav } from "./styles";
 
 const Navigation = () => {

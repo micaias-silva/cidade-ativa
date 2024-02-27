@@ -1,19 +1,14 @@
-import {
-  Container,
-  Grid,
-  ListItem,
-  UnorderedList,
-} from "../../styles/Containers";
-import imageLogo from "../../assets/img/logo.svg";
+import { Container, Grid, ListItem, UnorderedList } from "@styles/Containers";
+import imageLogo from "@img/logo.svg";
 import { GrInstagram } from "react-icons/gr";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 
 import { InGridContainer, SocialMediaLink, StyledFooter } from "./styles";
-import { ImageContainer } from "../../styles/Image";
-import { contactData } from "../../config/contactData";
-import { GenericLink, Topic, Text } from "../../styles/Text";
-import { formatPhone } from "../../tools/format.tools";
+import { ImageContainer } from "@styles/Image";
+import { contactData } from "@config/contactData";
+import { GenericLink, Topic, Text } from "@styles/Text";
+import { formatPhone } from "@tools/format.tools";
 
 const Footer = () => {
   return (

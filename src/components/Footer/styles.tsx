@@ -1,7 +1,7 @@
-import { Flex, Grid } from "../../styles/Containers";
-import { ImageContainer } from "../../styles/Image";
-import { styled } from "../../styles/stitches.config";
-import { GenericLink, Topic } from "../../styles/Text";
+import { Flex, Grid } from "@styles/Containers";
+import { ImageContainer } from "@styles/Image";
+import { styled } from "@styles/stitches.config";
+import { GenericLink, Topic } from "@styles/Text";
 
 export const StyledFooter = styled("footer", {
   width: "100%",

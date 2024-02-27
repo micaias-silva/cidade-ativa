@@ -1,14 +1,16 @@
 import * as yup from "yup";
-import { GenericButton } from "../../styles/Buttons";
-import { Form, Input, TextArea } from "../../styles/Form";
-import { FormError, Label, Span } from "../../styles/Text";
+import { useState } from "react";
+import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { emailJsConfig } from "@config/contactData";
+import { formatPhone } from "@tools/format.tools";
+
+import { GenericButton } from "@styles/Buttons";
+import { Form, Input, TextArea } from "@styles/Form";
+import { FormError } from "@styles/Text";
+
 import emailjs from "@emailjs/browser";
-import { formatPhone } from "../../tools/format.tools";
-import { useState } from "react";
-import { emailJsConfig } from "../../config/contactData";
-import { toast } from "react-toastify";
 
 const ContribForm = () => {
   const contribSchema = yup.object().shape({

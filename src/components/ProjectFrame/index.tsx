@@ -1,12 +1,11 @@
-import { ImageContainer } from "../../styles/Image";
-import { Text } from "../../styles/Text";
+import { Text } from "@styles/Text";
 import { ButtonContainer } from "./styles";
 
 interface IActivityProps {
   title: string;
   image: string;
   background: string;
-  // to: string;
+  // to: string; // To be updated when multi-paging is available
 }
 
 const ProjectFrame = ({ image, title, background }: IActivityProps) => {

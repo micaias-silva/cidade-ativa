@@ -1,5 +1,5 @@
-import { styled } from "../../styles/stitches.config";
-import { Text } from "../../styles/Text";
+import { styled } from "@styles/stitches.config";
+import { Text } from "@styles/Text";
 
 export const ButtonContainer = styled("div", {
   position: "relative",

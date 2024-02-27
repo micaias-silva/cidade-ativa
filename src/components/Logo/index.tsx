@@ -1,7 +1,7 @@
-import { useHistory } from "react-router-dom";
-import logoSvg from "../../assets/img/logo.svg";
-import { ImageContainer } from "../../styles/Image";
+import logoSvg from "@img/logo.svg";
+import { ImageContainer } from "@styles/Image";
 import { LogoContainer } from "./styles";
+// import { useHistory } from "react-router-dom";
 
 const Logo = () => {
   return (

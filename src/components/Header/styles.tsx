@@ -2,11 +2,10 @@ import { fadeIn } from "../../styles/Animations";
 import { Flex } from "../../styles/Containers";
 import { styled } from "../../styles/stitches.config";
 import { Title } from "../../styles/Text";
-import backgroundImage from "../../assets/img/header/background.png";
 
 export const StyledHeader = styled("header", {
   zIndex: 1,
-  height: 550,
+  height: 700,
   width: "100%",
   position: "relative",
   overflow: "hidden",
@@ -15,17 +14,15 @@ export const StyledHeader = styled("header", {
   },
   ".background": {
     position: "absolute",
-    transform: "scaleX(-1)",
-    bottom: 0,
-    right: -10,
+    top: 0,
     zIndex: 0,
-    width: "101%",
+    width: "100%",
     minWidth: 1024,
-    height: "100%",
+    height: "120%",
     "@mobile": {
-      display: "none"
-    }
-  }
+      display: "none",
+    },
+  },
 });
 
 export const HeaderContainer = styled("div", {
@@ -40,7 +37,7 @@ export const HeaderContainer = styled("div", {
   "@mobile": {
     alignItems: "center",
     padding: "$mobileContainerPadding",
-  }
+  },
 });
 
 export const HeaderImage = styled("img", {
@@ -61,6 +58,6 @@ export const HeaderPresention = styled("section", {
   zIndex: 1,
   maxWidth: 620,
   "@mobile": {
-    textAlign: "center"
-  }
+    textAlign: "center",
+  },
 });

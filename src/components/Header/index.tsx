@@ -5,8 +5,7 @@ import {
   HeaderPresention,
   StyledHeader,
 } from "./styles";
-import backgroundImage from "../../assets/img/header/background.png";
-import { ReactSVG } from "react-svg";
+import backgroundImage from "../../assets/img/etc/decoration-background-1.svg";
 
 const Header = () => {
   return (
@@ -15,11 +14,11 @@ const Header = () => {
       <HeaderContainer>
         <HeaderPresention>
           <Title color="white">
-            NÓS BUSCAMOS FORTACELER A COMUNIDADE ATRAVÉS DO ESPORTE, CULTURA E LAZER
+            NÓS BUSCAMOS FORTACELER A COMUNIDADE ATRAVÉS DO ESPORTE, CULTURA E
+            LAZER
           </Title>
           <Subtitle color="white">CONHEÇA O PROJETO CIDADE ATIVA</Subtitle>
         </HeaderPresention>
-        {/*<HeaderImage src={backgroundImage} />*/}
       </HeaderContainer>
     </StyledHeader>
   );

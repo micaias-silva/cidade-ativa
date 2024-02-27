@@ -7,8 +7,8 @@ export const { styled, globalCss, keyframes } = createStitches({
   theme: {
     colors: {
       orange: "#FF4A1B",
-      orange2: "#F88365",
-      brandGradient: "linear-gradient(135deg, $orange2, $orange)",
+      orange2: "#C62368",
+      brandGradient: "linear-gradient(135deg, $orange, $orange2)",
       gray: "#0c0c0c",
       gray2: "#ececec",
       gray3: "#868686",

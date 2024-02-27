@@ -50,7 +50,6 @@ export const Subtitle = styled("h3", {
 
 export const Topic = styled("h2", {
   ...baseText,
-
   marginBottom: 40,
   fontSize: "$topic",
   fontWeight: "$bold",
@@ -75,9 +74,10 @@ export const Span = styled("span", {
 export const FormError = styled(Span, {
   ...baseText,
   display: "block",
-  height: 14,
+  height: 12,
   fontWeight: "$bold",
-  fontSize: "$small",
-  color: "$white",
+  fontSize: "$smaller",
+  color: "$gray",
   margin: "5px 0",
+  textTransform: "uppercase"
 });

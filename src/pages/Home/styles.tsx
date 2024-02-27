@@ -68,9 +68,25 @@ export const AboutUsImageContainer = styled("figure", {
 });
 
 export const MapSection = styled(Section, {
-  textAlign: "center",
+  display: "flex",
+  flexDirection: "column",
+  [`${Topic}`]: {
+    textAlign: "right",
+    marginTop: "$4",
+    maxWidth: 250,
+    right: 0,
+    alignSelf:"flex-end",
+    "@mobile": {
+      padding: "0 $mobileContainerPadding"
+    }
+  },
   [`${Text}`]: {
     marginTop: "$4",
+    fontWeight: "$medium",
+    maxWidth: 400,
+    "@mobile": {
+      padding: "0 $mobileContainerPadding"
+    }
   },
 });
 

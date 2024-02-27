@@ -51,7 +51,7 @@ export const Subtitle = styled("h3", {
 export const Topic = styled("h2", {
   ...baseText,
 
-  marginBottom: 80,
+  marginBottom: 40,
   fontSize: "$topic",
   fontWeight: "$bold",
   variants: { ...colorVariants },

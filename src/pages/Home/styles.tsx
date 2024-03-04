@@ -155,17 +155,15 @@ export const PromotionImg = styled("figure", {
   },
 });
 
-export const DecorationBackground = styled("div", {
+export const DecorationBackground = styled("img", {
   width: "100%",
-  background: `url(${decorationImg})`,
   height: 670,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
   position: "absolute",
   bottom: 0,
   margin: 0,
   "@mobile": {
-    backgroundSize: "768px 600px",
+    objectFit: "cover",
+    objectPosition: "75% 0%",
   },
   zIndex: -1,
 });

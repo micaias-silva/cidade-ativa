@@ -3,7 +3,7 @@ import { fadeIn } from "@styles/Animations";
 import { Flex } from "@styles/Containers";
 import { styled } from "@styles/stitches.config";
 
-const ToggleView = keyframes({
+const ToggleViewHiding = keyframes({
   from: {
     top: 0,
   },
@@ -12,9 +12,17 @@ const ToggleView = keyframes({
   },
 });
 
+const ToggleViewShowing = keyframes({
+  from: {
+    top: -80,
+  },
+  to: {
+    top: 0,
+  },
+});
+
 export const NavigationContainer = styled("div", {
-  position: "fixed",
-  height: 80,
+  position: "absolute",
   top: 0,
   left: 0,
   zIndex: 2,
@@ -25,23 +33,22 @@ export const NavigationContainer = styled("div", {
     top: 0,
     left: 0,
     position: "fixed",
-    zIndex: 2,
-    transition: ".2s",
+    zIndex: 3,
+    transition: "1s",
     padding: "0 2rem",
     justifyContent: "space-between",
   },
-  ".show-background": {
-    background: "$orange",
+  ".toggle-background": {
+    background: "$brandGradient",
   },
   ".toggle-showing": {
-    animation: ToggleView,
-    animationDuration: "0.5s",
+    animation: ToggleViewShowing,
+    animationDuration: ".5s",
     animationFillMode: "forwards",
-    animationDirection: "reverse",
   },
   ".toggle-hiding": {
-    animation: ToggleView,
-    animationDuration: "0.5s",
+    animation: ToggleViewHiding,
+    animationDuration: ".5s",
     animationFillMode: "forwards",
   },
 });

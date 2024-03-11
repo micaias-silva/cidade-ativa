@@ -30,7 +30,11 @@ const Navigation = () => {
 
   return (
     <NavigationContainer>
-      <Flex className={`nav-wrapper `}>
+      <Flex
+        className={`nav-wrapper 
+        ${isShowing ? "toggle-showing" : "toggle-hiding"}
+        ${viewBackground && "toggle-background"}`}
+      >
         <Logo />
         <StyledNav>
           <Flex>

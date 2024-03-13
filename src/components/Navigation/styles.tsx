@@ -58,3 +58,19 @@ export const StyledNav = styled("nav", {
     display: "none",
   },
 });
+
+export const StyledNavMobile = styled("nav", {
+  display: "none",
+  "@mobile": {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "left",
+  },
+  [`${GenericLink}`]: {
+    width: "100%",
+    padding: "1rem .5rem",
+    "&:hover": {
+      backdropFilter: "brightness(1.2)",
+    },
+  },
+});

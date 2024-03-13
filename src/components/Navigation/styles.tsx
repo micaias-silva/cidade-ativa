@@ -51,6 +51,46 @@ export const NavigationContainer = styled("div", {
     animationDuration: ".5s",
     animationFillMode: "forwards",
   },
+  ".mobile-button-container": {
+    position: "relative",
+    display: "none",
+    height: 16,
+    width: 24,
+    cursor: "pointer",
+    div: {
+      transition: "500ms",
+      height: 2,
+      width: "100%",
+      background: "$white",
+    },
+    "& :first-child": {
+      position: "absolute",
+      top: 0,
+    },
+
+    "& :nth-child(2)": {
+      position: "absolute",
+      top: 14,
+    },
+    "@mobile": {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+    },
+  },
+  ".open": {
+    "& :first-child": {
+      position: "absolute",
+      top: "50%",
+      transform: "rotate(135deg)",
+    },
+
+    "& :nth-child(2)": {
+      position: "absolute",
+      top: "50%",
+      transform: "rotate(-135deg)",
+    },
+  },
 });
 
 export const StyledNav = styled("nav", {

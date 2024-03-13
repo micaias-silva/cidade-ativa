@@ -1,6 +1,5 @@
 import { keyframes } from "@stitches/react";
-import { fadeIn } from "@styles/Animations";
-import { Flex } from "@styles/Containers";
+import { GenericLink } from "@styles/Text";
 import { styled } from "@styles/stitches.config";
 
 const ToggleViewHiding = keyframes({
@@ -25,7 +24,7 @@ export const NavigationContainer = styled("div", {
   position: "absolute",
   top: 0,
   left: 0,
-  zIndex: 2,
+  zIndex: 3,
   width: "100%",
   ".nav-wrapper": {
     height: 80,
@@ -39,6 +38,7 @@ export const NavigationContainer = styled("div", {
     justifyContent: "space-between",
   },
   ".toggle-background": {
+    transition: "1s",
     background: "$brandGradient",
   },
   ".toggle-showing": {
@@ -112,5 +112,48 @@ export const StyledNavMobile = styled("nav", {
     "&:hover": {
       backdropFilter: "brightness(1.2)",
     },
+  },
+});
+
+export const ModalContainer = styled("div", {
+  position: "absolute",
+
+  ".modal-content": {
+    position: "relative",
+    top: 80,
+    left: 0,
+    right: "auto",
+    bottom: "auto",
+    border: "none",
+    background: "$brandGradient",
+    overflow: "auto",
+    WebkitOverflowScrolling: "touch",
+    borderRadius: "0 0 1rem 1rem",
+    /* borderBottom: "1rem solid $white", */
+    outline: "none",
+    width: "100%",
+  },
+  ".modal-overlay": {
+    zIndex: 2,
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(255, 255, 255, 0.5)",
+  },
+  ".ReactModal__Overlay": {
+    opacity: 0,
+    transition: "opacity 250ms ease-in-out",
+  },
+  ".ReactModal__Overlay--after-open": {
+    opacity: 1,
+    animation: ToggleViewShowing,
+    animationDuration: "250ms",
+  },
+  ".ReactModal__Overlay--before-close": {
+    opacity: 0,
+    animation: ToggleViewHiding,
+    animationDuration: "250ms",
   },
 });

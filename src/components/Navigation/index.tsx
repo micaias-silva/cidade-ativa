@@ -7,7 +7,7 @@ import {
   StyledNav,
   StyledNavMobile,
 } from "./styles";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import ReactModal from "react-modal";
 
 const Navigation = () => {
@@ -45,13 +45,11 @@ const Navigation = () => {
         ${viewBackground || mobileModalOpen ? "toggle-background" : ""}`}
       >
         <Logo />
-        <StyledNav onClick={handleCloseModal}>
+        <StyledNav>
           <Flex>
             <GenericLink href="#apoiadores">APOIADORES</GenericLink>
             <GenericLink href="#nossos-projetos">PROJETOS</GenericLink>
-            <GenericLink id="linklinkado" href="#sobre-nos">
-              SOBRE NÓS
-            </GenericLink>
+            <GenericLink href="#sobre-nos">SOBRE NÓS</GenericLink>
             <GenericLink href="#localização">ONDE ESTAMOS</GenericLink>
             <GenericLink href="#fale-conosco">FALE CONOSCO</GenericLink>
           </Flex>
@@ -76,12 +74,22 @@ const Navigation = () => {
           shouldCloseOnOverlayClick
           closeTimeoutMS={250}
         >
-          <StyledNavMobile>
-            <GenericLink href="#apoiadores">APOIADORES</GenericLink>
-            <GenericLink href="#nossos-projetos">PROJETOS</GenericLink>
-            <GenericLink href="#sobre-nos">SOBRE NÓS</GenericLink>
-            <GenericLink href="#localização">ONDE ESTAMOS</GenericLink>
-            <GenericLink href="#fale-conosco">FALE CONOSCO</GenericLink>
+          <StyledNavMobile id="mobile-links">
+            <GenericLink onClick={handleCloseModal} href="#apoiadores">
+              APOIADORES
+            </GenericLink>
+            <GenericLink onClick={handleCloseModal} href="#nossos-projetos">
+              PROJETOS
+            </GenericLink>
+            <GenericLink onClick={handleCloseModal} href="#sobre-nos">
+              SOBRE NÓS
+            </GenericLink>
+            <GenericLink onClick={handleCloseModal} href="#localização">
+              ONDE ESTAMOS
+            </GenericLink>
+            <GenericLink onClick={handleCloseModal} href="#fale-conosco">
+              FALE CONOSCO
+            </GenericLink>
           </StyledNavMobile>
         </ReactModal>
       </ModalContainer>

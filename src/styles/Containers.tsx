@@ -16,11 +16,11 @@ export const Container = styled("div", {
           width: "100%",
           maxWidth: "100%",
           margin: 0,
-          padding: 0
+          padding: 0,
         },
-      }
-    }
-  }
+      },
+    },
+  },
 });
 
 export const Wrapper = styled("div", {
@@ -60,8 +60,15 @@ export const UnorderedList = styled("ul", {
   textAlign: "left",
   listStyle: "none",
   width: "100%",
+  display: "flex",
+  gap: "$1",
+  flexDirection: "column",
+  a: {
+    textDecoration: "underline",
+  },
 
-  color: "$white",
+  "*": { color: "$gray3" },
+  fontSize: "$smallest",
   [`& ${GenericLink}`]: {
     fontWeight: "$regular",
   },

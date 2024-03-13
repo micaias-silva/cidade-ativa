@@ -6,6 +6,7 @@ import imageCultura from "@img/cultura.jpg";
 import imageLazer from "@img/lazer.jpg";
 import imageEdu from "@img/educação.jpg";
 import decorationImg from "@img/etc/decoration-1.svg";
+import decorationImg2 from "@img/etc/decoration-2.svg";
 import promoImg from "@img/promo-1.jpg";
 
 import {
@@ -124,7 +125,7 @@ const Home = () => {
             </Flex>
           </FormSection>
         </ContribContainer>
-        <DecorationBackground />
+        <DecorationBackground src={decorationImg2} />
       </div>
     </StyledHome>
   );

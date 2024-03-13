@@ -1,22 +1,60 @@
 import { Flex, Grid } from "@styles/Containers";
 import { ImageContainer } from "@styles/Image";
 import { styled } from "@styles/stitches.config";
-import { GenericLink, Topic } from "@styles/Text";
+import { GenericLink, Span, Subtitle, Topic } from "@styles/Text";
 
 export const StyledFooter = styled("footer", {
+  position: "relative",
   width: "100%",
   minHeight: 200,
   height: "100%",
   background: "$gray",
-  paddingTop: "$1",
+  padding: "$1 0 $1 0",
 
   [`& ${Grid}`]: {
-    gridTemplateColumns: "33% 33% 33%",
-    gap: "$1",
+    gridTemplateColumns: "50% 50%",
+    paddingBottom: "$3",
+    rowGap: "2rem",
+    width: "100%",
+    marginBottom: "$2",
 
-    "@mobile": {
+    "@smallMobile": {
       gridTemplateColumns: "100%",
-      rowGap: "$2",
+    },
+  },
+  hr: {
+    border: "none",
+    height: 1,
+    width: "100%",
+    background: "$gray3",
+    position: "absolute",
+    bottom: "2rem",
+    zIndex: 2,
+  },
+  [`& > ${Span}`]: {
+    textAlign: "center",
+    display: "block",
+    fontSize: "$smallest",
+  },
+
+  ".splitter": {
+    justifyContent: "space-between",
+    padding: "60px 0",
+    [`& ${ImageContainer}`]: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "100%",
+      width: "100%",
+      maxHeight: 300,
+      maxWidth: 300,
+      img: {
+        width: "50%",
+      },
+    },
+    "@mobile": {
+      flexDirection: "column-reverse",
+      alignItems: "center",
     },
   },
 });
@@ -30,23 +68,7 @@ export const SocialMediaLink = styled("a", {
   },
 });
 
-export const InGridContainer = styled("div", {
-  padding: "40px 20px",
-
-  [`& ${ImageContainer}`]: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100%",
-    width: "100%",
-    img: {
-      width: "50%",
-    },
-  },
-  [`& ${Topic}`]: {
-    marginBottom: 10,
-  },
-});
+export const InGridContainer = styled("div", {});
 
 export const SocialMediaButton = styled("button", {
   width: 48,

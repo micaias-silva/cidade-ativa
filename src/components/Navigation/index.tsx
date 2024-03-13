@@ -1,12 +1,19 @@
 import { Flex } from "@styles/Containers";
 import { GenericLink } from "@styles/Text";
 import Logo from "@components/Logo";
-import { NavigationContainer, StyledNav } from "./styles";
-import { useState } from "react";
+import {
+  ModalContainer,
+  NavigationContainer,
+  StyledNav,
+  StyledNavMobile,
+} from "./styles";
+import { useEffect, useState } from "react";
+import ReactModal from "react-modal";
 
 const Navigation = () => {
   const [isShowing, setShowing] = useState<boolean>(true);
   const [viewBackground, setViewBackground] = useState<boolean>(false);
+  const [mobileModalOpen, setModalOpen] = useState<boolean>(false);
 
   let lastScrollTop = window.scrollY;
 
@@ -28,24 +35,56 @@ const Navigation = () => {
     lastScrollTop = scrollTopPosition < 0 ? 0 : scrollTopPosition;
   });
 
+  const handleCloseModal = () => setModalOpen(false);
+
   return (
     <NavigationContainer>
       <Flex
         className={`nav-wrapper 
-        ${isShowing ? "toggle-showing" : "toggle-hiding"}
-        ${viewBackground && "toggle-background"}`}
+        ${isShowing || mobileModalOpen ? "toggle-showing" : "toggle-hiding"}
+        ${viewBackground || mobileModalOpen ? "toggle-background" : ""}`}
       >
         <Logo />
-        <StyledNav>
+        <StyledNav onClick={handleCloseModal}>
           <Flex>
+            <GenericLink href="#apoiadores">APOIADORES</GenericLink>
+            <GenericLink href="#nossos-projetos">PROJETOS</GenericLink>
+            <GenericLink id="linklinkado" href="#sobre-nos">
+              SOBRE NÓS
+            </GenericLink>
+            <GenericLink href="#localização">ONDE ESTAMOS</GenericLink>
+            <GenericLink href="#fale-conosco">FALE CONOSCO</GenericLink>
+          </Flex>
+        </StyledNav>
+        <div
+          className={`mobile-button-container ${mobileModalOpen && "open"}`}
+          onClick={() => setModalOpen(!mobileModalOpen)}
+        >
+          <div />
+          <div />
+        </div>
+      </Flex>
+      <ModalContainer>
+        <ReactModal
+          isOpen={mobileModalOpen}
+          onRequestClose={() => setModalOpen(false)}
+          preventScroll
+          portalClassName={ModalContainer.className}
+          className="modal-content"
+          overlayClassName="modal-overlay"
+          shouldCloseOnEsc
+          shouldCloseOnOverlayClick
+          closeTimeoutMS={250}
+        >
+          <StyledNavMobile>
             <GenericLink href="#apoiadores">APOIADORES</GenericLink>
             <GenericLink href="#nossos-projetos">PROJETOS</GenericLink>
             <GenericLink href="#sobre-nos">SOBRE NÓS</GenericLink>
             <GenericLink href="#localização">ONDE ESTAMOS</GenericLink>
             <GenericLink href="#fale-conosco">FALE CONOSCO</GenericLink>
-          </Flex>
-        </StyledNav>
-      </Flex>
+          </StyledNavMobile>
+        </ReactModal>
+      </ModalContainer>
     </NavigationContainer>
   );
 };

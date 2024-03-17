@@ -9,5 +9,3 @@ export const emailJsConfig = {
   templateId: (import.meta.env.VITE_TEMPLATE_ID as string) || "",
   publicKey: (import.meta.env.VITE_PUBLIC_KEY as string) || "",
 };
-
-console.log(emailJsConfig);

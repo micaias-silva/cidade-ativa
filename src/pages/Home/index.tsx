@@ -1,10 +1,5 @@
-import ProjectFrame from "@components/ProjectFrame";
-import { Container, Flex, Grid, Section } from "@styles/Containers";
+import { Container, Flex, Section } from "@styles/Containers";
 import { Text, Topic, Subtitle } from "@styles/Text";
-import imageEsportes from "@img/esportes.jpg";
-import imageCultura from "@img/cultura.jpg";
-import imageLazer from "@img/lazer.jpg";
-import imageEdu from "@img/educação.jpg";
 import decorationImg from "@img/etc/decoration-1.svg";
 import decorationImg2 from "@img/etc/decoration-2.svg";
 import promoImg from "@img/promo-1.jpg";
@@ -23,6 +18,7 @@ import {
 } from "./styles";
 import ContribForm from "@components/ContribForm";
 import projectImg from "@img/simas-presentation.jpg";
+import { ProjectShowcase } from "@components/ProjectShowcase";
 
 const Home = () => {
   return (
@@ -62,29 +58,8 @@ const Home = () => {
       </Container>
       <Container>
         <Section id="nossos-projetos">
-          <Topic>Nós temos projetos em</Topic>
-          <Grid>
-            <ProjectFrame
-              title="Esportes"
-              background="$opRed"
-              image={imageEsportes}
-            />
-            <ProjectFrame
-              title="Cultura"
-              background="$opGreen"
-              image={imageCultura}
-            />
-            <ProjectFrame
-              title="Lazer"
-              background="$opYellow"
-              image={imageLazer}
-            />
-            <ProjectFrame
-              title="Educação"
-              background="$opBlue"
-              image={imageEdu}
-            />
-          </Grid>
+          <Topic>CONHEÇA OS NOSSOS PROJETOS</Topic>
+          <ProjectShowcase />
         </Section>
       </Container>
       <Container></Container>

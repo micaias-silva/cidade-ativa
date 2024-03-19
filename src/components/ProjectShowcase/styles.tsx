@@ -14,5 +14,27 @@ export const ProjectShowcaseContainer = styled("div", {
         background: "$orange",
       },
     },
+    ".control-next.control-arrow": {
+      "&:before": {
+        border: "none",
+        content: `url(${arrow})`,
+        zIndex: 1,
+        rotate: "90deg",
+      },
+      "@mobile": {
+        display: "none",
+      },
+    },
+    ".control-prev.control-arrow": {
+      "&:before": {
+        border: "none",
+        content: `url(${arrow})`,
+        zIndex: 1,
+        rotate: "-90deg",
+      },
+      "@mobile": {
+        display: "none",
+      },
+    },
   },
 });

@@ -7,10 +7,15 @@ export const ProjectCardContainer = styled("div", {
   background: "$white",
   boxShadow: "0 4px 8px rgba(0, 0, 0, .25)",
   borderRadius: 10,
+  minWidth: 280,
   width: 280,
   position: "relative",
   textTransform: "uppercase",
   fontSize: "$regular",
+  "@mobile": {
+    width: "100%",
+    margin: "0 $2",
+  },
   img: {
     borderRadius: "10px 10px 0 0",
     width: "100%",

@@ -44,9 +44,9 @@ export const ProjectShowcase = () => {
         showStatus={false}
       >
         {projectSets.map((el, idx) => (
-          <div className="cards-container">
-            {el.map((e) => (
-              <ProjectCard {...e} />
+          <div className="cards-container" key={"projectPage-" + idx}>
+            {el.map((subEl, subIdx) => (
+              <ProjectCard {...subEl} key={`project${idx}-${subIdx}`} />
             ))}
           </div>
         ))}

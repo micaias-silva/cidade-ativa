@@ -1,4 +1,5 @@
 import { fadeIn } from "@styles/Animations";
+import { Container } from "@styles/Containers";
 import { styled } from "@styles/stitches.config";
 
 export const StyledHeader = styled("header", {
@@ -32,6 +33,8 @@ export const HeaderContainer = styled("div", {
   flexDirection: "column",
   overflowX: "hidden",
   padding: "$containerPadding",
+  maxWidth: "125rem",
+  margin: "0 auto",
   "@mobile": {
     alignItems: "center",
     padding: "$mobileContainerPadding",

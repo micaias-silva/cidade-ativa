@@ -1,6 +1,9 @@
 import { styled } from "@styles/stitches.config";
 
 export const ProjectCardContainer = styled("div", {
+  userSelect: "none",
+  "webkit-user-select": "none",
+  "ms-user-select": "none",
   display: "flex",
   flexDirection: "column",
   height: 330,

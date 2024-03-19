@@ -21,7 +21,8 @@
       "@img/*": ["assets/img/*"],
       "@styles/*": ["styles/*"],
       "@config/*": ["config/*"],
-      "@tools/*": ["tools/*"]
+      "@tools/*": ["tools/*"],
+      "@interfaces/*": ["interfaces/*"]
     }
   },
   "include": ["src"],

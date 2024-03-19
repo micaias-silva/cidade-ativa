@@ -11,8 +11,8 @@ export const GenericLink = styled("a", {
   ...baseText,
   textDecoration: "none",
   color: "$white",
-  fontWeight: "$bold",
-
+  fontWeight: 500,
+  fontSize: "$small",
   "&:hover": {
     filter: "brightness(0.8)",
   },
@@ -46,7 +46,7 @@ export const Subtitle = styled("h3", {
     fontSize: "$regular",
   },
   variants: { ...colorVariants },
-})
+});
 
 export const Topic = styled("h2", {
   ...baseText,
@@ -69,6 +69,7 @@ export const Span = styled("span", {
   ...baseText,
   fontSize: "$small",
   color: "$white",
+  variants: { ...colorVariants },
 });
 
 export const FormError = styled(Span, {
@@ -79,5 +80,5 @@ export const FormError = styled(Span, {
   fontSize: "$smaller",
   color: "$gray",
   margin: "5px 0",
-  textTransform: "uppercase"
+  textTransform: "uppercase",
 });

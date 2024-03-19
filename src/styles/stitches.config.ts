@@ -3,12 +3,13 @@ import { createStitches } from "@stitches/react";
 export const { styled, globalCss, keyframes } = createStitches({
   media: {
     mobile: "(max-width: 768px)",
+    smallMobile: "(max-width: 420px)",
   },
   theme: {
     colors: {
       orange: "#FF4A1B",
-      orange2: "#F88365",
-      brandGradient: "linear-gradient(135deg, $orange2, $orange)",
+      orange2: "#C62368",
+      brandGradient: "linear-gradient(135deg, $orange, $orange2)",
       gray: "#0c0c0c",
       gray2: "#ececec",
       gray3: "#868686",
@@ -26,6 +27,7 @@ export const { styled, globalCss, keyframes } = createStitches({
       bold: 700,
     },
     fontSizes: {
+      smallest: "0.625rem",
       smaller: "0.75rem",
       small: "0.875rem",
       regular: "1rem",

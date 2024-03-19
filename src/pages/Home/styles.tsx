@@ -16,6 +16,7 @@ export const AboutUsSection = styled(Section, {
   position: "relative",
   padding: "$containerPadding",
   width: "100%",
+  marginTop: 160,
   minHeight: 550,
   [`& ${Topic}`]: {
     marginBottom: 20,

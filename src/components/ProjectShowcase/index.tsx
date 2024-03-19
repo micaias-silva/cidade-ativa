@@ -20,10 +20,10 @@ export const ProjectShowcase = () => {
       document.querySelector("." + ProjectShowcaseContainer.className)
         ?.clientWidth || 0;
 
-    setContainerWidth((clientWidth < 280 ? 280 : clientWidth) + 9);
+    setContainerWidth((clientWidth < 280 ? 280 : clientWidth) + 4);
   }
 
-  const cardsPerCarouselPage = Math.floor(containerWidth / (280 + 9)) || 1;
+  const cardsPerCarouselPage = Math.floor(containerWidth / (280 + 4)) || 1;
 
   let projectSets = [];
 

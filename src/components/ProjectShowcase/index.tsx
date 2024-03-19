@@ -1,9 +1,8 @@
-import { ProjectsData } from "@config/mockedData";
+import { mockedProjectList } from "@config/mockedData";
 import { ProjectShowcaseContainer } from "./styles";
 import { ProjectCard } from "@components/ProjectCard";
 import { Carousel } from "react-responsive-carousel";
 import { useEffect, useState } from "react";
-import { Flex } from "@styles/Containers";
 
 export const ProjectShowcase = () => {
   useEffect(() => {
@@ -28,8 +27,8 @@ export const ProjectShowcase = () => {
 
   let projectSets = [];
 
-  for (let i = 0; i < ProjectsData.length; i = i + cardsPerCarouselPage) {
-    projectSets.push(ProjectsData.slice(i, i + cardsPerCarouselPage));
+  for (let i = 0; i < mockedProjectList.length; i = i + cardsPerCarouselPage) {
+    projectSets.push(mockedProjectList.slice(i, i + cardsPerCarouselPage));
   }
 
   return (

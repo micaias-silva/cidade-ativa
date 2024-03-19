@@ -1,45 +1,78 @@
 import { IProjectCard } from "@interfaces/index";
 import imageEsportes from "@img/esportes.jpg";
+import taekwondoImg from "@img/content/taekwondo-course-cape.webp";
+import karateImg from "@img/content/karate-course-cape.jpg";
+import capoeiraImg from "@img/content/capoeira-course-cape.png";
+import teatroImg from "@img/content/teatro-course-cape.jpg";
+import zumbaImg from "@img/content/zumba-course-cape.jpg";
+import hipHopDanceImg from "@img/content/hiphopdance-course-cape.webp";
+import cinemaImg from "@img/content/cinema-course-cape.jpg";
+import desenhoImg from "@img/content/desenho-course-cape.webp";
+import englishImg from "@img/content/english-course-cape.png";
+import redacaoImg from "@img/content/redação-course-cape.jpg";
+import quadrilhaImg from "@img/content/quadrilha-course-image.jpeg";
+
+enum Category {
+  sport = "Esporte",
+  leisure = "Lazer",
+  education = "Educação",
+  culture = "Cultura",
+}
 
 export const mockedProjectList: IProjectCard[] = [
   {
-    title: "Empreendedorismo",
-    category: "Educação",
-    imgUrl: imageEsportes,
+    title: "Taekwondo",
+    category: Category.sport,
+    imgUrl: taekwondoImg,
   },
   {
-    title: "Taekwondo 1",
-    category: "Esportes",
-    imgUrl: imageEsportes,
+    title: "Karatê",
+    category: Category.sport,
+    imgUrl: karateImg,
   },
   {
-    title: "Taekwondo 2",
-    category: "Esportes",
-    imgUrl: imageEsportes,
+    title: "Capoeira",
+    category: Category.sport,
+    imgUrl: capoeiraImg,
   },
   {
-    title: "Taekwondo 3",
-    category: "Esportes",
-    imgUrl: imageEsportes,
+    title: "Teatro",
+    category: `${Category.education} e ${Category.culture}`,
+    imgUrl: teatroImg,
   },
   {
-    title: "Empreendedorismo 2",
-    category: "Educação",
-    imgUrl: imageEsportes,
+    title: "Zumba",
+    category: Category.leisure,
+    imgUrl: zumbaImg,
   },
   {
-    title: "Taekwondo 5",
-    category: "Esportes",
-    imgUrl: imageEsportes,
+    title: "Hip Hop Dance",
+    category: Category.culture,
+    imgUrl: hipHopDanceImg,
   },
   {
-    title: "Taekwondo 6",
-    category: "Esportes",
-    imgUrl: imageEsportes,
+    title: "Oficina de Cinema",
+    category: Category.education,
+    imgUrl: cinemaImg,
   },
   {
-    title: "Taekwondo 7",
-    category: "Esportes",
-    imgUrl: imageEsportes,
+    title: "Oficina de Desenho",
+    category: `${Category.education} e ${Category.culture}`,
+    imgUrl: desenhoImg,
+  },
+  {
+    title: "Curso de Inglês",
+    category: `${Category.education}`,
+    imgUrl: englishImg,
+  },
+  {
+    title: "Curso de Redação",
+    category: `${Category.education}`,
+    imgUrl: redacaoImg,
+  },
+  {
+    title: "Quadrilha Junina",
+    category: `${Category.education}`,
+    imgUrl: quadrilhaImg,
   },
 ];

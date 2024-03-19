@@ -22,7 +22,7 @@ export const ProjectCardContainer = styled("div", {
   img: {
     borderRadius: "10px 10px 0 0",
     width: "100%",
-    height: "100%",
+    height: 290,
     objectFit: "cover",
   },
   h3: {
@@ -31,6 +31,7 @@ export const ProjectCardContainer = styled("div", {
   },
   ".info-container": {
     alignItems: "center",
+    position: "relative",
     justifyContent: "space-between",
     height: 52,
     padding: ".5rem",

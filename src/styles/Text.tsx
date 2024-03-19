@@ -11,7 +11,7 @@ export const GenericLink = styled("a", {
   ...baseText,
   textDecoration: "none",
   color: "$white",
-  fontWeight: "$bold",
+  fontWeight: 500,
   fontSize: "$small",
   "&:hover": {
     filter: "brightness(0.8)",

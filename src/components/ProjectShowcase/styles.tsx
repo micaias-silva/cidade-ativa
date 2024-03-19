@@ -37,4 +37,12 @@ export const ProjectShowcaseContainer = styled("div", {
       },
     },
   },
+
+  ".cards-container": {
+    display: "flex",
+    justifyContent: "center",
+    gap: "$1",
+    width: "100%",
+    height: 370,
+  },
 });

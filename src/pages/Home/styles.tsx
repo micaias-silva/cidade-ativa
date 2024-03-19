@@ -1,9 +1,14 @@
 import { Container, Flex, Section } from "@styles/Containers";
 import { styled } from "@styles/stitches.config";
 import { Topic, Text } from "@styles/Text";
-import decorationImg from "@img/etc/decoration-2.svg";
 
-export const StyledHome = styled("main", {});
+export const StyledHome = styled("main", {
+  "#nossos-projetos": {
+    [`${Topic}`]: {
+      maxWidth: 250,
+    },
+  },
+});
 
 export const AboutUsSection = styled(Section, {
   background: "$brandGradient",
@@ -11,6 +16,7 @@ export const AboutUsSection = styled(Section, {
   position: "relative",
   padding: "$containerPadding",
   width: "100%",
+  marginTop: 160,
   minHeight: 550,
   [`& ${Topic}`]: {
     marginBottom: 20,
